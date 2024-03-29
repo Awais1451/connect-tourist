@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+
+<!-- Mirrored from codervent.com/matoxi/demo/vertical-menu/table-datatable.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Dec 2023 07:47:43 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Bootstrap demo</title>
+    <!--favicon-->
+    <!--plugins-->
+    <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/metisMenu.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/mm-vertical.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/simplebar/css/simplebar.css">
+    <!--bootstrap css-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+    <!--main css-->
+    <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+    <link href="sass/main.css" rel="stylesheet">
+    <link href="sass/dark-theme.css" rel="stylesheet">
+    <link href="sass/semi-dark.css" rel="stylesheet">
+    <link href="sass/bordered-theme.css" rel="stylesheet">
+    <link href="sass/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- New Datatabe  -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css"
+        integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g=="
+        crossorigin="anonymous" />
+
+    <!-- data table -->
+    <link href="https://cdn.datatables.net/v/bs5/dt-1.13.8/r-2.5.0/sb-1.6.0/sp-2.2.0/datatables.min.css"
+        rel="stylesheet" />
+    <script src="js/main_admin.js"></script>
+
+    <style>
+        .input-with-icon {
+            position: relative;
+        }
+
+        .input-with-icon input[type="text"] {
+            padding-right: 30px;
+            /* Adjust this value as needed */
+        }
+
+        .input-with-icon .fa-check {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            /* Adjust this value as needed */
+            transform: translateY(-50%);
+            visibility: hidden;
+            cursor: pointer;
+        }
+
+        .input-with-icon.checked .fa-check {
+            visibility: visible;
+        }
+
+        .input-with-icon.checked input[type="text"] {
+            background-color: #FBD54F !important;
+            /* Set background color to yellow when checked */
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!--start header-->
+    <header class="top-header ">
+        <nav class="navbar navbar-expand align-items-center gap-4">
+            <div class="btn-toggle">
+                <a href="javascript:;"><i class="material-icons-outlined">menu</i></a>
+            </div>
+            <div class="search-bar flex-grow-1">
+                <div class="position-relative">
+                    <div class="search-popup ">
+                        <div class="card rounded-4  ">
+
+                            <div class="card-body search-content">
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            </div>
+
+        </nav>
+    </header>
+    <!--end top header-->
+
+    <!--start sidebar-->
+    <aside class="sidebar-wrapper">
+        <div class="sidebar-header">
+            <div class="logo-icon logo-name my-3">
+                <img src="assets/img/Random-Symboles.png" class="logo-img" alt="">
+            </div>
+            <div class="logo-namesecond  mt-4 ">
+                <img src="assets/img/Random-Symboles.png" class="logo-img" alt="" style="width: 130px;">
+            </div>
+
+        </div>
+        <div class="sidebar-nav" data-simplebar="true">
+
+            <!--navigation-->
+            <ul class="metismenu" id="sidenav">
+                <li>
+                    <a href="./index.html">
+                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">home</i>
+                        </div>
+                        <div class="menu-title">Dashboard</div>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">widgets</i>
+                        </div>
+                        <div class="menu-title">Hotel Rooms</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:;">
+                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">inventory_2</i>
+                        </div>
+                        <div class="menu-title">All Bookings</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:;">
+                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">shopping_bag</i>
+                        </div>
+                        <div class="menu-title">Wallet</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">card_giftcard</i>
+                        </div>
+                        <div class="menu-title">Refund Requests </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">view_agenda</i>
+                        </div>
+                        <div class="menu-title">Profile</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:;" class="notify-list ">
+                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">view_agenda</i>
+                        </div>
+                        <div class="menu-title">Settings</div>
+                    </a>
+                </li>
+                <li class="mt-5 ">
+
+                    <div class="  BTNSign">
+                        <button type="button" class="btn w-100 px-5 btn ">Logout</button>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+            <!--end navigation-->
+        </div>
+
+    </aside>
+    <!--end sidebar-->
+
+    <!--start main wrapper-->
+    <main class="main-wrapper">
+        <div class="main-content bg-white">
+            <!--breadcrumb-->
+          <div class="d-flex justify-content-between align-items-center ">
+            <div class="  py-2 ">
+                <h2 class="REct_text">Wallet</h2>
+            </div>
+            <div class="">
+          <a href="#">
+            <img class="w-100 " src="./assets/img/withdrawal.svg" alt="">
+          </a>
+                    
+            </div>
+          </div>
+          <p class="Hotel-text  ">Available Amount,Transactions & withdraws are below</p>
+
+
+            <!--end breadcrumb-->
+
+
+        </div>
+        <div class="main-content bg-white my-3 ">
+            <div class="d-flex justify-content-between py-2   align-items-center ">
+                <h2 class="REct_text">Wallet</h2>
+                <button class="btn btn-dark ">
+                   <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.30901 13.1907C2.28634 14.1667 3.85701 14.1667 6.99967 14.1667C10.1423 14.1667 11.7137 14.1667 12.6897 13.19C13.6663 12.2147 13.6663 10.6427 13.6663 7.50004C13.6663 4.35737 13.6663 2.78604 12.6897 1.80937C11.7143 0.833374 10.1423 0.833374 6.99967 0.833374C3.85701 0.833374 2.28567 0.833374 1.30901 1.80937C0.333008 2.78671 0.333008 4.35737 0.333008 7.50004C0.333008 10.6427 0.333008 12.2147 1.30901 13.1907ZM8.83301 10.1667C8.83301 10.2993 8.78033 10.4265 8.68656 10.5203C8.59279 10.614 8.46562 10.6667 8.33301 10.6667H5.66634C5.53373 10.6667 5.40656 10.614 5.31279 10.5203C5.21902 10.4265 5.16634 10.2993 5.16634 10.1667C5.16634 10.0341 5.21902 9.90692 5.31279 9.81315C5.40656 9.71939 5.53373 9.66671 5.66634 9.66671H8.33301C8.46562 9.66671 8.59279 9.71939 8.68656 9.81315C8.78033 9.90692 8.83301 10.0341 8.83301 10.1667ZM9.66634 8.00004C9.79895 8.00004 9.92613 7.94736 10.0199 7.85359C10.1137 7.75983 10.1663 7.63265 10.1663 7.50004C10.1663 7.36743 10.1137 7.24026 10.0199 7.14649C9.92613 7.05272 9.79895 7.00004 9.66634 7.00004H4.33301C4.2004 7.00004 4.07322 7.05272 3.97945 7.14649C3.88569 7.24026 3.83301 7.36743 3.83301 7.50004C3.83301 7.63265 3.88569 7.75983 3.97945 7.85359C4.07322 7.94736 4.2004 8.00004 4.33301 8.00004H9.66634ZM11.4997 4.83337C11.4997 4.96598 11.447 5.09316 11.3532 5.18693C11.2595 5.28069 11.1323 5.33337 10.9997 5.33337H2.99967C2.86707 5.33337 2.73989 5.28069 2.64612 5.18693C2.55235 5.09316 2.49967 4.96598 2.49967 4.83337C2.49967 4.70077 2.55235 4.57359 2.64612 4.47982C2.73989 4.38605 2.86707 4.33337 2.99967 4.33337H10.9997C11.1323 4.33337 11.2595 4.38605 11.3532 4.47982C11.447 4.57359 11.4997 4.70077 11.4997 4.83337Z" fill="white"/>
+                        </svg>  Today
+                        
+                </button>            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 py-2 ">
+                  <div class=" bg-Color px-3 py-2  rounded-2">
+                    <h2 class="NUMBER text-white ">€400</h2>
+                    <p class="PARA_text text-white">Available Credits</p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 py-2 ">
+                  <div class=" bg-Color2 px-3 py-2  rounded-2">
+                    <h2 class="NUMBER text-white ">€12.5k</h2>
+                    <p class="PARA_text text-white ">WIThdrawn</p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 py-2 ">
+                  <div class=" bg-Color3 px-3 py-2  rounded-2">
+                    <h2 class="NUMBER text-white ">€20</h2>
+                    <p class="PARA_text text-white ">Refunded</p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 py-2 ">
+                  <div class=" bg-Color4 px-3 py-2  rounded-2">
+                    <h2 class="NUMBER">€500</h2>
+                    <p class="PARA_text">Pending Payment</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class=" main-content py-0">
+            <div class="">
+                <a href="#" class="mx-2 py-2 ">
+                    <input type="button" class="btn my-2  btn-secondary  bg-secondary " value="All Transactions">
+                </a>
+                <a href="#" class="mx-2 ">
+                    <input type="button" class="btn my-2  btn-primary   bg-primary  " value="Withdrawn">
+                </a>
+            </div>
+        </div>
+        <div class="main-content bg-white mt-4 ">
+            <div class="row    pb-2   ">
+                <h2 class=" REct_text py-2 ">Withdrawn</h2>
+                <div class="table-responsive ">
+                    <table class="table table-striped bg-white exampleT w-100" id="all_clients_list">
+                        <thead>
+                            <tr>
+                                <th scope="col">W.ID</th>
+                                <th scope="col">Withdrawn Date</th>
+                                <th scope="col">Payment Method</th>
+                                <th scope="col">Payment Method</th>
+                                <th scope="col">Withdraw Amount</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Invoice</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-whes">
+                            <tr class="">
+                                <td>12</td>
+                                <td>14-Mar-2024</td>
+                                <td>8888 **** **** 6744</td>
+                                <td>Debit Card</td>
+                                <td class="">
+                                    <button type="button" class="bg-success text-black   border-0 text-white rounded-pill px-4 py-2">
+                                        €80.00
+                                    </button>
+                                </td>
+                                <td class="mainbadge">
+                                    <a href="#" class="mx-2">
+                                        <input type="button" class="btn btn-secondary     rounded-5  bg-secondary    "
+                                            value="Pending">
+                                    </a>
+                                </td>
+                              
+                            </tr>
+                            <tr class="">
+                                <td>12</td>
+                                <td>14-Mar-2024</td>
+                                <td>8888 **** **** 6744</td>
+                                <td>Debit Card</td>
+                                <td class="">
+                                    <button type="button" class="bg-success  border-0 text-white rounded-pill px-4 py-2">
+                                        €80.00
+                                    </button>
+                                </td>
+                                <td class="mainbadge">
+                                    <a href="#" class="mx-2">
+                                        <input type="button" class="btn btn-primary      rounded-5  bg-primary     "
+                                            value="Completed">
+                                    </a>
+                                </td>
+                                <td class="mainbadge">
+                                    <a href="#" class="mx-2">
+                                        <input type="button" class="btn btn- border-black text-black  bg-white  " value="View">
+                                    </a>
+                                </td>
+                            </tr>
+                         
+                            <!-- Add more rows with similar structure for additional data -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+       
+    </main>
+    <!--end main wrapper-->
+
+
+    <!--start overlay-->
+    <div class="overlay btn-toggle"></div>
+    <!--end overlay-->
+
+
+
+
+
+
+
+
+    <!--bootstrap js-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!--plugins-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--plugins-->
+    <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+    <script src="assets/plugins/metismenu/metisMenu.min.js"></script>
+    <script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            var table = $('#example2').DataTable({
+                lengthChange: false,
+                buttons: ['copy', 'excel', 'pdf', 'print']
+            });
+
+            table.buttons().container()
+                .appendTo('#example2_wrapper .col-md-6:eq(0)');
+        });
+
+
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            // Initialize DataTable for example
+            $('#example').DataTable();
+
+            // Initialize DataTable for example2 with buttons and checkboxes
+            var table = $('#example2').DataTable({
+                lengthChange: false,
+                buttons: ['copy', 'excel', 'pdf', 'print'],
+                select: true, // Enable row selection
+                columnDefs: [{
+                    targets: 0, // Target the first column
+                    checkboxes: {
+                        selectRow: true // Enable row selection checkbox
+                    }
+                }],
+                select: {
+                    style: 'multi' // Enable multiple row selection
+                }
+            });
+
+            // Move the buttons container
+            table.buttons().container().appendTo('#example2_wrapper .col-md-6:eq(0)');
+        });
+    </script>
+
+    <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Ndew Script Added  -->
+
+    <!-- data table -->
+    <script src="https://cdn.datatables.net/v/bs5/dt-1.13.8/r-2.5.0/sb-1.6.0/sp-2.2.0/datatables.min.js"></script>
+
+    <script>
+        new DataTable(".exampleT");
+        new DataTable("#exampleT");
+        $('.exampleT').DataTable({
+            "columnDefs": [
+                { "orderable": false, "targets": [columnIndex] }
+            ]
+        });
+
+
+
+        $(document).ready(function () {
+            // Fetch and include header.html
+            $("#header").load("./header.html ");
+            $("#foter").load("./footer.html ");
+        });
+    </script>
+
+    <!-- model  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+    <script>
+        function toggleCheckIcon(inputId, checkIconId) {
+            var inputField = document.getElementById(inputId);
+            var checkIcon = document.getElementById(checkIconId);
+
+            // Remove 'checked' class from all input fields
+            document.querySelectorAll('.input-with-icon input[type="text"]').forEach(function (input) {
+                input.classList.remove('checked');
+                input.style.backgroundColor = ''; // Reset background color
+            });
+
+            // Hide all check icons
+            document.querySelectorAll('.input-with-icon .fa-check').forEach(function (icon) {
+                icon.style.visibility = 'hidden';
+            });
+
+            // Toggle 'checked' class for the clicked input field
+            inputField.classList.toggle('checked');
+
+            // Show check icon if input field is checked
+            if (inputField.classList.contains('checked')) {
+                checkIcon.style.visibility = 'visible';
+                inputField.style.backgroundColor = '#FBD54F'; // Set background color to yellow
+            } else {
+                checkIcon.style.visibility = 'hidden';
+            }
+        }
+    </script>
+</body>
+
+
+<!-- Mirrored from codervent.com/matoxi/demo/vertical-menu/table-datatable.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Dec 2023 07:47:44 GMT -->
+
+</html>

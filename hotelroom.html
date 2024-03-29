@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+
+<!-- Mirrored from codervent.com/matoxi/demo/vertical-menu/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Dec 2023 07:46:56 GMT -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> | Bootstrap 5 Admin Dashboard Template</title>
+  <!--favicon-->
+
+  <!--plugins-->
+  <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/metisMenu.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/mm-vertical.css">
+  <link rel="stylesheet" type="text/css" href="assets/plugins/simplebar/css/simplebar.css">
+  <!--bootstrap css-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <!--main css-->
+  <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+  <link href="sass/main.css" rel="stylesheet">
+  <link href="sass/dark-theme.css" rel="stylesheet">
+  <link href="sass/semi-dark.css" rel="stylesheet">
+  <link href="sass/bordered-theme.css" rel="stylesheet">
+  <link href="sass/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--start header-->
+  <header class="top-header ">
+    <nav class="navbar navbar-expand align-items-center gap-4">
+      <div class="btn-toggle">
+        <a href="javascript:;"><i class="material-icons-outlined">menu</i></a>
+      </div>
+      <div class="search-bar flex-grow-1">
+        <div class="position-relative">
+          <div class="search-popup ">
+            <div class="card rounded-4  ">
+
+              <div class="card-body search-content">
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </div>
+
+    </nav>
+  </header>
+  <!--end top header-->
+
+  <!--start sidebar-->
+  <aside class="sidebar-wrapper">
+    <div class="sidebar-header">
+      <div class="logo-icon logo-name my-3">
+        <img src="assets/img/Random-Symboles.png" class="logo-img" alt="">
+      </div>
+      <div class="logo-namesecond  mt-4 ">
+        <img src="assets/img/Random-Symboles.png" class="logo-img" alt="" style="width: 130px;">
+      </div>
+
+    </div>
+    <div class="sidebar-nav" data-simplebar="true">
+
+      <!--navigation-->
+      <ul class="metismenu" id="sidenav">
+        <li>
+          <a href="./index.html">
+            <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">home</i>
+            </div>
+            <div class="menu-title">Dashboard</div>
+          </a>
+
+        </li>
+        <li>
+          <a href="javascript:;" >
+            <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">widgets</i>
+            </div>
+            <div class="menu-title">Hotel Rooms</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;" >
+            <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">inventory_2</i>
+            </div>
+            <div class="menu-title">All Bookings</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;" >
+            <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">shopping_bag</i>
+            </div>
+            <div class="menu-title">Wallet</div>
+          </a>
+        </li>
+        <li>
+          <a  href="javascript:;">
+            <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">card_giftcard</i>
+            </div>
+            <div class="menu-title">Refund Requests </div>
+          </a>
+        </li>
+        <li>
+          <a  href="javascript:;">
+            <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">view_agenda</i>
+            </div>
+            <div class="menu-title">Profile</div>
+          </a>
+        </li>
+
+        <li>
+          <a  href="javascript:;" class="notify-list ">
+            <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">view_agenda</i>
+            </div>
+            <div class="menu-title">Settings</div>
+          </a>
+        </li>
+        <li class="mt-5 ">
+         
+            <div class="  BTNSign">
+              <button type="button"  class="btn w-100 px-5 btn ">Logout</button>
+
+            </div>
+     
+        </li>
+   
+      </ul>
+      
+      <!--end navigation-->
+    </div>
+
+  </aside>
+  <!--end sidebar-->
+
+
+  <!--start main wrapper-->
+  <main class="main-wrapper">
+    <div class="main-content bg-white  px-0 ">
+      <!--breadcrumb-->
+      <div class="bg-white   my-3">
+       
+        <div class="table-responsive pt-3 ">
+          <table class="table table-striped bg-white exampleT w-100" id="all_clients_list">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Unit Type</th>
+                <th scope="col">Total Rooms</th>
+                <th scope="col">Available Rooms</th>
+                <th scope="col">Rooms in Maintenance</th>
+                <th scope="col">Price Per Unit</th>
+                <th scope="col" class="text-center ">Action</th>
+              </tr>
+            </thead>
+            <tbody class="bg-whes">
+              <tr class="">
+                <td>1</td>
+                <td>Standard</td>
+                <td>100</td>
+                <td>100</td>
+                <td class=" ">100</td>
+                <td class="mainbadge">
+                  <div class="bootbadgesuccess">
+                    <div class="d-flex">
+                      <div class="">
+                        <button type="button" class="bg-transparent border-0 text-white pe-1" data-bs-toggle="modal"
+                          data-bs-target="#modeluser">
+                          €30.00
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="d-flex align-items-center justify-content-end ">
+                  <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#modelusernotify">
+                    <input type="button" class="btn btn-primary bg-primary" value="Set Available">
+                  </a>
+                  <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#modelusernotify">
+                    <input type="button" class="btn btn-primary bg-primary" value="Update Unit">
+                  </a>
+                  <a href="#" class=" mx-2 " data-bs-toggle="modal" data-bs-target="#modelusernotify">
+                    <img src="./assets/images/delete.svg" alt="">
+  
+                  </a>
+                </td>
+              </tr>
+            
+              <!-- Add more rows with similar structure for additional data -->
+            </tbody>
+          </table>
+        </div>
+        
+        
+      </div>
+      <!--end breadcrumb-->
+    </div>
+  </main>
+  <!--end main wrapper-->
+
+
+  <!--start overlay-->
+  <div class="overlay btn-toggle"></div>
+  <!--end overlay-->
+
+
+
+  <!--start footer-->
+ 
+  <!--top footer-->
+
+
+  <!--start cart-->
+
+  <!--end cart-->
+
+
+  <!--start switcher-->
+ 
+  <!--start switcher-->
+
+  <!--bootstrap js-->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <!--plugins-->
+  <script src="assets/js/jquery.min.js"></script>
+  <!--plugins-->
+  <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+  <script src="assets/plugins/metismenu/metisMenu.min.js"></script>
+  <script src="assets/plugins/apexchart/apexcharts.min.js"></script>
+  <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+  <script src="assets/js/index2.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+
+  <script src="assets/plugins/chartjs/js/chart.js"></script>
+  <script src="assets/plugins/chartjs/js/chartjs-custom.js"></script>
+  <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+</body>
+
+
+<!-- Mirrored from codervent.com/matoxi/demo/vertical-menu/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Dec 2023 07:47:01 GMT -->
+
+</html>

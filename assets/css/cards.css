@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text-grey-color: #8a92a6 ;
+}
+.mypage-body{
+    background: #f3f2f7 !important;
+}
+
+.custom-inner-nav{
+    background-color: #fff;
+}
+.nav-heading{
+    font-size: 32px;
+    font-weight: 600;
+    color: #464255;
+}
+.inprogress__btn{
+    color: #fff;
+    background-color: #0387d6;
+    
+}
+
+.viewmap-btn{
+    background-color: #27ae60;
+    border: none;
+    color: #fff;
+}
+
+
+.this-text-grey{
+    color: var(--text-grey-color) !important;
+}
+.completed__btn {
+    background-color: #27ae60;
+    color: #fff;
+}
+.readytopick__btn{
+    background-color: #af2655;
+    color: #fff;
+}
+.card__shadowbar{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
+
+}
+.table-shadow{
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+
+
+}
+.card__shadow{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
+    height: 304px !important;
+    overflow: hidden;
+}
+
+
+
+
+.below-table-th ,.below-table-td {
+    /* text-align: center; */
+    border: none;
+    border-bottom: 1px solid #ddd; /* Add bottom border to each cell */
+    /* padding: 8px; */
+}
+
+.below-table-th {
+    background-color: #f2f2f2;
+    font-size: 16px;
+    font-weight: 500;
+    color: #343a40 !important;
+}
+
+
+.myTable{
+    background-color: #fff;
+
+}
+
+ 
+.green-bd-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #27ae60 !important;
+    display: inline-block;
+    margin-right: 8px;
+    margin-left: 15px;
+    margin-bottom: -5px;
+
+}
+
+.empty-bd-dot{
+    border: 1px solid grey;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    margin-left: 15px;
+    margin-bottom: -5px;
+    
+}
+
+.dot1, .dot2, .dot3, .dot4, .dot5{
+    position: relative;
+}
+.dot1::before{
+    content: "Order At";
+    position: absolute;
+    font-size: 14px;
+    top: -35px;
+    left: -15px;
+    white-space: nowrap;
+    
+
+}
+.dot1::after{
+    content: "3:30PM";
+    color: #27ae60;
+    position: absolute;
+    font-size: 14px;
+    bottom: -35px;
+    left: -15px;
+
+}
+.dot2::before{
+    content: "Accepted At";
+    position: absolute;
+    font-size: 14px;
+    top: -35px;
+    left: -15px;
+    white-space: nowrap;
+    
+
+}
+.dot2::after{
+    content: "3:30PM";
+    color: #27ae60;
+    position: absolute;
+    font-size: 14px;
+    bottom: -35px;
+    left: -15px;
+
+}
+.dot3::before{
+    content: "Ready At";
+    position: absolute;
+    font-size: 14px;
+    top: -35px;
+    left: -15px;
+    white-space: nowrap;
+    
+
+}
+.dot3::after{
+    content: "3:30PM";
+    color: #27ae60;
+    position: absolute;
+    font-size: 14px;
+    bottom: -35px;
+    left: -15px;
+
+}
+.dot4::before{
+    content: "Dispatched";
+    position: absolute;
+    font-size: 14px;
+    top: -35px;
+    left: -15px;
+    white-space: nowrap;
+    
+
+}
+.dot4::after{
+    content: "";
+    color: #27ae60;
+    position: absolute;
+    font-size: 14px;
+    bottom: -35px;
+    left: -15px;
+
+}
+.dot5::before{
+    content: "Delivered";
+    position: absolute;
+    font-size: 14px;
+    top: -35px;
+    left: -15px;
+    white-space: nowrap;
+    
+
+}
+.dot5::after{
+    content: "";
+    color: #27ae60;
+    position: absolute;
+    font-size: 14px;
+    bottom: -35px;
+    left: -15px;
+
+}
+
+.mytable{
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+}
+
+
+@media (max-width:768px){
+    .card__shadow{
+        height: fit-content !important;
+    }
+}
+
+@media(max-width:440px){
+    .nav-heading{
+        font-size: 18px;
+    }
+    .nav-tags{
+        font-size: 10px;
+        
+    }
+}
+
+/* progress steps breadcrumb`s display is none here (: */
+@media(max-width:1170px){
+
+    .stepbreadcrumb{
+        display: none;
+    }
+   
+}
+
+/* models css*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.inter-uniquifier {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+/* font-weights */
+.font-7 {
+    font-family: "Inter", sans-serif;
+    font-weight: 650;
+}
+
+.font-6 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: large;
+}
+
+.font-4 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.place-color-border {
+    background-color: #F4F4F5;
+}
+
+/* upload images css */
+#picture__input {
+    display: none;
+}
+
+.picture {
+    width: 17rem;
+    height: 17rem;
+    /* aspect-ratio: 16 / 9; */
+    /* background: #dbdbdb; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0089D6;
+    border: 2px dashed #888888;;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: sans-serif;
+    background: #ccc;
+    transition: color 300ms ease-in-out;
+}
+
+.picture:hover {
+    border-color: #888888;
+    background: #ccc;
+}
+
+.picture:active {
+    border-color: #0089D6;
+    color: #0089D6;
+    background: #ddd;
+}
+
+.picture__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.picture__image img {
+    width: 99%;
+    height: 26.2rem;
+    /* margin-left: 4px; */
+    /* margin-right: 0px; */
+    /* height: 15.9rem; */
+    border-radius: 1rem;
+}
+
+/* button */
+.pa-bot button {
+    padding-inline: 8rem;
+    padding-block: 20px;
+}

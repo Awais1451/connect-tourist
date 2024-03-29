@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+
+<!-- Mirrored from codervent.com/matoxi/demo/vertical-menu/table-datatable.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Dec 2023 07:47:43 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Bootstrap demo</title>
+    <!--favicon-->
+    <!--plugins-->
+    <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/metisMenu.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/mm-vertical.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/simplebar/css/simplebar.css">
+    <!--bootstrap css-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+    <!--main css-->
+    <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+    <link href="sass/main.css" rel="stylesheet">
+    <link href="sass/dark-theme.css" rel="stylesheet">
+    <link href="sass/semi-dark.css" rel="stylesheet">
+    <link href="sass/bordered-theme.css" rel="stylesheet">
+    <link href="sass/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- New Datatabe  -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css"
+        integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g=="
+        crossorigin="anonymous" />
+
+    <!-- data table -->
+    <link href="https://cdn.datatables.net/v/bs5/dt-1.13.8/r-2.5.0/sb-1.6.0/sp-2.2.0/datatables.min.css"
+        rel="stylesheet" />
+    <script src="js/main_admin.js"></script>
+
+    <style>
+        .input-with-icon {
+            position: relative;
+        }
+
+        .input-with-icon input[type="text"] {
+            padding-right: 30px;
+            /* Adjust this value as needed */
+        }
+
+        .input-with-icon .fa-check {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            /* Adjust this value as needed */
+            transform: translateY(-50%);
+            visibility: hidden;
+            cursor: pointer;
+        }
+
+        .input-with-icon.checked .fa-check {
+            visibility: visible;
+        }
+
+        .input-with-icon.checked input[type="text"] {
+            background-color: #FBD54F !important;
+            /* Set background color to yellow when checked */
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!--start header-->
+    <header class="top-header ">
+        <nav class="navbar navbar-expand align-items-center gap-4">
+            <div class="btn-toggle">
+                <a href="javascript:;"><i class="material-icons-outlined">menu</i></a>
+            </div>
+            <div class="search-bar flex-grow-1">
+                <div class="position-relative">
+                    <div class="search-popup ">
+                        <div class="card rounded-4  ">
+
+                            <div class="card-body search-content">
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            </div>
+
+        </nav>
+    </header>
+    <!--end top header-->
+
+    <!--start sidebar-->
+    <aside class="sidebar-wrapper">
+        <div class="sidebar-header">
+            <div class="logo-icon logo-name my-3">
+                <img src="assets/img/Random-Symboles.png" class="logo-img" alt="">
+            </div>
+            <div class="logo-namesecond  mt-4 ">
+                <img src="assets/img/Random-Symboles.png" class="logo-img" alt="" style="width: 130px;">
+            </div>
+
+        </div>
+        <div class="sidebar-nav" data-simplebar="true">
+
+            <!--navigation-->
+            <ul class="metismenu" id="sidenav">
+                <li>
+                    <a href="./index.html">
+                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">home</i>
+                        </div>
+                        <div class="menu-title">Dashboard</div>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">widgets</i>
+                        </div>
+                        <div class="menu-title">Hotel Rooms</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:;">
+                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">inventory_2</i>
+                        </div>
+                        <div class="menu-title">All Bookings</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:;">
+                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">shopping_bag</i>
+                        </div>
+                        <div class="menu-title">Wallet</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">card_giftcard</i>
+                        </div>
+                        <div class="menu-title">Refund Requests </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">view_agenda</i>
+                        </div>
+                        <div class="menu-title">Profile</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:;" class="notify-list ">
+                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">view_agenda</i>
+                        </div>
+                        <div class="menu-title">Settings</div>
+                    </a>
+                </li>
+                <li class="mt-5 ">
+
+                    <div class="  BTNSign">
+                        <button type="button" class="btn w-100 px-5 btn ">Logout</button>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+            <!--end navigation-->
+        </div>
+
+    </aside>
+    <!--end sidebar-->
+
+    <!--start main wrapper-->
+    <main class="main-wrapper">
+        <div class="main-content bg-white">
+            <!--breadcrumb-->
+           <div class="d-flex  gap-3">
+            <img src="./assets/img/arrow.svg" alt="">
+            <div class="  py-2 ">
+                <h2 class="REct_text">Withdraw Amount</h2>
+                <p class="Hotel-text  ">You Can Withdraw your Credits & deposit them into account here.</p>
+            </div>
+           </div>
+            
+
+            <!--end breadcrumb-->
+
+
+        </div>
+        <div class="main-content  mt-4 ">
+            
+                <div class="bg-white  p-3 py-3 rounded  ">
+                    <div class="row ">
+                        <div class="col-md-6 py-2 ">
+                            <h2 class="REct_Text text-capitalize ">Enter amount to debit</h2>
+                            <p class="Hotel-TExt  ">This amount will be deducted from credits and debited in your
+                                payment account.</p>
+                            <input type="text" class="BG_input  px-2 py-2 border-0 w-75 rounded-2" placeholder="$325">
+                            <div class=" d-flex justify-content-start  align-items-center  ">
+                                <img src="./assets/img/iicon.svg" alt="">
+                                <p class="musT ps-2 pt-3">Must be less than available credits</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2 d-flex justify-content-center align-items-center  ">
+                            <div class="d-flex justify-content-center align-items-center  ">
+                                <img src="./assets/img/coin.svg" alt="">
+                                <div class="">
+                                    <h2 class="NBR-text">€400</h2>
+                            <p class="Avalible-text">Available Credits</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-white my-3 p-3 rounded  ">
+                   <div class=" d-flex justify-content-between flex-column flex-md-row py-3   align-items-center ">
+                    <div class="">
+                        <h2 class="REct_Text text-capitalize ">Select Payment Method</h2>
+                        <p class="Hotel-TExt  ">In which you would like to have your payment credited</p>
+                    </div>
+                    <button class="btn btn  BTN-Border ">Add New Payment Method</button>
+                   </div>
+                   <div class="row">
+                    <div class="col-sm-6  py-2 ">
+                    <div class="d-flex  gap-3 sEction2 p-2  rounded ">
+                        <input type="radio" id="option1" name="options" value="option2">
+                        <div class="d-flex gap-3 align-items-center justify-content-start ">
+                            <img src="./assets/img/walit.svg" alt="">
+                            <div class="pt-2 ">
+                                <h3 class="Accont-TEXT">Account Name</h3>
+                                <p class="NMbr">1241 **** **** 2352</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-sm-6 py-2 ">
+                    <div class="d-flex  gap-3 sEction2 p-2  rounded ">
+                        <input type="radio" id="option2" name="options" value="option2">
+                        <div class="d-flex gap-3 align-items-center justify-content-start ">
+                            <img src="./assets/img/walit.svg" alt="">
+                            <div class="pt-2 ">
+                                <h3 class="Accont-TEXT">Account Name</h3>
+                                <p class="NMbr">1241 **** **** 2352</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="row">
+                 <div class="col-sm-3 pe-4 ">
+                    <a href="#" class="mx-2 py-2 ">
+                        <input type="button" class="btn my-2  btn-secondary  bg-secondary " value="Cancel">
+                    </a>
+                 </div>
+                  <div class="col-sm-5   ">
+                    <a href="#" class="mx-2 ">
+                        <input type="button" class="btn w-100  my-2   btn-primary   bg-primary  " value="Confirm Payout">
+                    </a>
+                  </div>
+                </div>
+        </div>
+        
+    </main>
+    <!--end main wrapper-->
+
+
+    <!--start overlay-->
+    <div class="overlay btn-toggle"></div>
+    <!--end overlay-->
+
+
+
+
+
+
+
+
+    <!--bootstrap js-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!--plugins-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--plugins-->
+    <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+    <script src="assets/plugins/metismenu/metisMenu.min.js"></script>
+    <script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            var table = $('#example2').DataTable({
+                lengthChange: false,
+                buttons: ['copy', 'excel', 'pdf', 'print']
+            });
+
+            table.buttons().container()
+                .appendTo('#example2_wrapper .col-md-6:eq(0)');
+        });
+
+
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            // Initialize DataTable for example
+            $('#example').DataTable();
+
+            // Initialize DataTable for example2 with buttons and checkboxes
+            var table = $('#example2').DataTable({
+                lengthChange: false,
+                buttons: ['copy', 'excel', 'pdf', 'print'],
+                select: true, // Enable row selection
+                columnDefs: [{
+                    targets: 0, // Target the first column
+                    checkboxes: {
+                        selectRow: true // Enable row selection checkbox
+                    }
+                }],
+                select: {
+                    style: 'multi' // Enable multiple row selection
+                }
+            });
+
+            // Move the buttons container
+            table.buttons().container().appendTo('#example2_wrapper .col-md-6:eq(0)');
+        });
+    </script>
+
+    <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Ndew Script Added  -->
+
+    <!-- data table -->
+    <script src="https://cdn.datatables.net/v/bs5/dt-1.13.8/r-2.5.0/sb-1.6.0/sp-2.2.0/datatables.min.js"></script>
+
+    <script>
+        new DataTable(".exampleT");
+        new DataTable("#exampleT");
+        $('.exampleT').DataTable({
+            "columnDefs": [
+                { "orderable": false, "targets": [columnIndex] }
+            ]
+        });
+
+
+
+        $(document).ready(function () {
+            // Fetch and include header.html
+            $("#header").load("./header.html ");
+            $("#foter").load("./footer.html ");
+        });
+    </script>
+
+    <!-- model  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+    <script>
+        function toggleCheckIcon(inputId, checkIconId) {
+            var inputField = document.getElementById(inputId);
+            var checkIcon = document.getElementById(checkIconId);
+
+            // Remove 'checked' class from all input fields
+            document.querySelectorAll('.input-with-icon input[type="text"]').forEach(function (input) {
+                input.classList.remove('checked');
+                input.style.backgroundColor = ''; // Reset background color
+            });
+
+            // Hide all check icons
+            document.querySelectorAll('.input-with-icon .fa-check').forEach(function (icon) {
+                icon.style.visibility = 'hidden';
+            });
+
+            // Toggle 'checked' class for the clicked input field
+            inputField.classList.toggle('checked');
+
+            // Show check icon if input field is checked
+            if (inputField.classList.contains('checked')) {
+                checkIcon.style.visibility = 'visible';
+                inputField.style.backgroundColor = '#FBD54F'; // Set background color to yellow
+            } else {
+                checkIcon.style.visibility = 'hidden';
+            }
+        }
+    </script>
+</body>
+
+
+<!-- Mirrored from codervent.com/matoxi/demo/vertical-menu/table-datatable.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Dec 2023 07:47:44 GMT -->
+
+</html>
