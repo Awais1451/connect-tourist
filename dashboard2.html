@@ -20,6 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&amp;display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--main css-->
   <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
   <link href="sass/main.css" rel="stylesheet">
@@ -83,7 +84,7 @@
 
         </li>
         <li>
-          <a href="./hotelroom.html" >
+          <a href="javascript:;" >
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">widgets</i>
             </div>
             <div class="menu-title">Hotel Rooms</div>
@@ -91,7 +92,7 @@
         </li>
 
         <li>
-          <a href="./All-booking.html" >
+          <a href="javascript:;" >
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">inventory_2</i>
             </div>
             <div class="menu-title">All Bookings</div>
@@ -99,21 +100,21 @@
         </li>
 
         <li>
-          <a href="./wallet-all.html" >
+          <a href="javascript:;" >
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">shopping_bag</i>
             </div>
             <div class="menu-title">Wallet</div>
           </a>
         </li>
         <li>
-          <a  href="./refund-request.html">
+          <a  href="javascript:;">
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">card_giftcard</i>
             </div>
             <div class="menu-title">Refund Requests </div>
           </a>
         </li>
         <li>
-          <a  href="./refund-request.html">
+          <a  href="javascript:;">
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">view_agenda</i>
             </div>
             <div class="menu-title">Profile</div>
@@ -121,7 +122,7 @@
         </li>
 
         <li>
-          <a  href="./setting.html" class="notify-list ">
+          <a  href="javascript:;" class="notify-list ">
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">view_agenda</i>
             </div>
             <div class="menu-title">Settings</div>
@@ -147,79 +148,211 @@
 
   <!--start main wrapper-->
   <main class="main-wrapper">
-    <div class="main-content bg-white   ">
-      <div class="d-flex justify-content-between align-items-center ">
-        <div class="  py-2 ">
-            <h2 class="REct_text">Hotel Rooms</h2>
-        </div>
-        <div class="">
-          <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#addroom">
-            <input type="button" class="btn btn-primary bg-primary" value="Add New Room">
-          </a>
-
-        </div>
-    </div>
-    <p class="Hotel-text  ">Here is a list of all your Rooms Type in the Hotel.</p>
-    </div>
-
+    <div class="main-content bg-white pb-0  ">
       <!--breadcrumb-->
-      <div class="bg-white main-content   my-3 px-0">
-       
-        <div class="table-responsive pt-3 ">
-          <table class="table table-striped bg-white exampleT w-100" id="all_clients_list">
-            <thead>
-              <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Unit Type</th>
-                <th scope="col">Total Rooms</th>
-                <th scope="col">Available Rooms</th>
-                <th scope="col">Rooms in Maintenance</th>
-                <th scope="col">Price Per Unit</th>
-                <th scope="col" class="text-center ">Action</th>
-              </tr>
-            </thead>
-            <tbody class="bg-whes">
-              <tr class="">
-                <td>1</td>
-                <td>Standard</td>
-                <td>100</td>
-                <td>100</td>
-                <td class=" ">100</td>
-                <td class="mainbadge">
-                  <div class="bootbadgesuccess">
-                    <div class="d-flex">
-                      <div class="">
-                        <button type="button" class="bg-transparent border-0 text-white pe-1" data-bs-toggle="modal"
-                          data-bs-target="#modeluser">
-                          €30.00
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td class="d-flex align-items-center justify-content-end ">
-                  <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#availabelunits">
-                    <input type="button" class="btn btn-primary bg-primary" value="Set Available">
-                  </a>
-                  <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#updateunit">
-                    <input type="button" class="btn btn-primary bg-primary" value="Update Unit">
-                  </a>
-                  <a href="#" class=" mx-2 " data-bs-toggle="modal" data-bs-target="#deleteunit">
-                    <img src="./assets/images/delete.svg" alt="">
-  
-                  </a>
-                </td>
-              </tr>
-            
-              <!-- Add more rows with similar structure for additional data -->
-            </tbody>
-          </table>
+      <div class="page-breadcrumb     d-flex align-items-center mb-3">
+        <div class="breadcrumb-title pe-3">
+          <h3>Dashboard</h3>
+          <p>Hello, Manager. Welcome back to your Buissness Portal!</p>
         </div>
-        
-        
       </div>
       <!--end breadcrumb-->
     </div>
+   <div class="main-content">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 py-2 ">
+        <div class=" bg-white px-3 py-2  rounded-2">
+          <h2 class="NUMBER">4</h2>
+          <p class="PARA_text">Upcoming Bookings</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 py-2 ">
+        <div class=" bg-white px-3 py-2  rounded-2">
+          <h2 class="NUMBER">30</h2>
+          <p class="PARA_text">ALl Bookings</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 py-2 ">
+        <div class=" bg-white px-3 py-2  rounded-2">
+          <h2 class="NUMBER">€200.40</h2>
+          <p class="PARA_text">ALl Time Earnings</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 py-2 ">
+        <div class=" bg-white px-3 py-2  rounded-2">
+          <h2 class="NUMBER">130</h2>
+          <p class="PARA_text">Days of GUIDe Given</p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white p-3   px-3  my-3">
+        <h2 class="REct_text">Recent Bookings</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="d-flex flex-column flex-sm-row  align-items-center gap-3">
+                    <img class="iMG-width w-50 py-2 " src="./assets/images/Ellipse 177.png" alt="">
+                    <div class="">
+                        <table class="">
+    
+                            <tr class="">
+                                <td class="py-2 this-text-grey pe-5 ">Contact No</td>
+                                <td class="ps-5">914-774-3551</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 this-text-grey ">Full Name</td>
+                                <td class="ps-5">
+                                    AhmedKhan12
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 this-text-grey ">Email</td>
+                                <td class="ps-sm-5 ps-0  TEXT_MED">AhmedKhan12@gmail.com</td>
+                            </tr>
+                      
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 justify-content-end d-flex align-items-center ">
+              <button class="bg-secondary btn border-0   btn-secondary   mx-2 py-2 my-2  rounded ">
+                <a href="#">
+                  <span class=" px-2  text-white fs-6 "><i class="fa-solid fa-phone"></i></span>
+              </a>
+              Call Now
+                
+            </button>
+            <button class="btn btn-primary bg-primary  mx-2 py-2 my-2  rounded ">
+              <a href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span class=" px-2  text-white fs-6  "><i class="fa-regular fa-envelope"></i></span>
+            </a>
+            Notify User
+            </button>
+
+            </div>
+        </div>
+    </div>
+    <div class="bg-white  px-2 my-3">
+      <div class="d-flex justify-content-between px-3  align-items-center py-2   align-self-center ">
+        <h2 class="REct_text">Recent Bookings</h2>
+        <a href="#">
+          <input type="button" class="btn btn-dark  bg-dark  " value="View All">
+
+        </a>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-striped bg-white exampleT w-100" id="all_clients_list">
+          <thead>
+            <tr>
+              <th scope="col">Booking By</th>
+              <th scope="col">Booking at</th>
+              <th scope="col">Checkin date</th>
+              <th scope="col">Checkout date</th>
+              <th scope="col">Amount Paid</th>
+              <th scope="col">Status</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody class="bg-whes">
+            <tr class="">
+              <td>AhmedKhan12</td>
+              <td>20 mins ago</td>
+              <td>9th Sep 23</td>
+              <td>10th September 23</td>
+              <td class="NMBR text-black fw-bolder ">€60.00</td>
+              <td class="mainbadge">
+                <div class="bootbadgesuccess">
+                  <div class="d-flex">
+                    <div class="">
+                      <button type="button" class="bg-transparent border-0 text-white pe-1" 
+                     >
+                        Confirmed
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="d-flex align-items-center justify-content-end ">
+                <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#cancelbooking"><img
+                    src="./assets/img/x.svg" alt=""></a>
+                    <a href="#" class=" mx-2 " data-bs-toggle="modal" data-bs-target="#notify-customer">
+                      <img src="./assets/images/email.svg" alt="">
+    
+                    </a>
+                <a href="#" class="mx-2" >
+                  <input type="button" class="btn btn-primary bg-primary" value="Details">
+                </a>
+              </td>
+            </tr>
+            <tr class="">
+              <td>AhmedKhan12</td>
+              <td>20 mins ago</td>
+              <td>9th Sep 23</td>
+              <td>10th September 23</td>
+              <td class="NMBR text-black fw-bolder ">€60.00</td>
+              <td class="mainbadge">
+                <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#modelusernotify">
+                  <input type="button" class="btn btn-warning  rounded-5  bg-warning " value="Checked Out">
+                </a>
+              </td>
+              <td class="d-flex align-items-center justify-content-end ">
+                
+                <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#modeldelete">
+                  <img src="./assets/images/delete.svg" alt="">
+                </a>
+                <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#modelusernotify">
+                  <input type="button" class="btn btn-primary bg-primary" value="Details">
+                </a>
+              </td>
+            </tr>
+            <!-- Add more rows with similar structure for additional data -->
+          </tbody>
+        </table>
+      </div>
+      
+      
+    </div>
+    <div class="bg-white  px-2 my-4">
+      <div class=" py-2   px-3  ">
+        <h2 class="REct_text">Upcoming Checkouts</h2>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-striped bg-white exampleT w-100" id="all_clients_list">
+          <thead>
+            <tr>
+              <th scope="col">Booking By</th>
+              <th scope="col">Free Units to be</th>
+              <th scope="col">Checked In</th>
+              <th scope="col">Checkout to be In</th>
+              <th scope="col" class="text-center ">Action</th>
+            </tr>
+          </thead>
+          <tbody class="bg-whes">
+            <tr class="">
+              <td>Leigh Ankunding</td>
+              <td>2</td>
+              <td>4 days ago</td>
+              <td>30 mins</td>
+             
+              <td class="d-flex align-items-center justify-content-end ">
+                <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#modelusernotify">
+                  <input type="button" class="btn btn-success  bg-success " value="Notify Customer">
+                </a>
+                <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#modelusernotify">
+                  <input type="button" class="btn btn-primary bg-primary" value="Details">
+                </a>
+              </td>
+            </tr>
+           
+            <!-- Add more rows with similar structure for additional data -->
+          </tbody>
+        </table>
+      </div>
+      
+      
+    </div>
+   </div>
+
+
   </main>
   <!--end main wrapper-->
 
@@ -699,6 +832,7 @@
   </div>
 </div>
  <!-- models end -->
+
   <!--end overlay-->
 
 

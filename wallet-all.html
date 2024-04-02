@@ -41,35 +41,7 @@
         rel="stylesheet" />
     <script src="js/main_admin.js"></script>
 
-    <style>
-        .input-with-icon {
-            position: relative;
-        }
 
-        .input-with-icon input[type="text"] {
-            padding-right: 30px;
-            /* Adjust this value as needed */
-        }
-
-        .input-with-icon .fa-check {
-            position: absolute;
-            top: 50%;
-            right: 10px;
-            /* Adjust this value as needed */
-            transform: translateY(-50%);
-            visibility: hidden;
-            cursor: pointer;
-        }
-
-        .input-with-icon.checked .fa-check {
-            visibility: visible;
-        }
-
-        .input-with-icon.checked input[type="text"] {
-            background-color: #FBD54F !important;
-            /* Set background color to yellow when checked */
-        }
-    </style>
 
 </head>
 
@@ -104,106 +76,106 @@
     <!--end top header-->
 
     <!--start sidebar-->
-    <aside class="sidebar-wrapper">
-        <div class="sidebar-header">
-            <div class="logo-icon logo-name my-3">
-                <img src="assets/img/Random-Symboles.png" class="logo-img" alt="">
+   <aside class="sidebar-wrapper">
+    <div class="sidebar-header">
+      <div class="logo-icon logo-name my-3">
+        <img src="assets/img/Random-Symboles.png" class="logo-img" alt="">
+      </div>
+      <div class="logo-namesecond  mt-4 ">
+        <img src="assets/img/Random-Symboles.png" class="logo-img" alt="" style="width: 130px;">
+      </div>
+
+    </div>
+    <div class="sidebar-nav" data-simplebar="true">
+
+      <!--navigation-->
+      <ul class="metismenu" id="sidenav">
+        <li>
+          <a href="./index.html">
+            <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">home</i>
             </div>
-            <div class="logo-namesecond  mt-4 ">
-                <img src="assets/img/Random-Symboles.png" class="logo-img" alt="" style="width: 130px;">
+            <div class="menu-title">Dashboard</div>
+          </a>
+
+        </li>
+        <li>
+          <a href="./hotelroom.html" >
+            <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">widgets</i>
             </div>
+            <div class="menu-title">Hotel Rooms</div>
+          </a>
+        </li>
 
-        </div>
-        <div class="sidebar-nav" data-simplebar="true">
+        <li>
+          <a href="./All-booking.html" >
+            <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">inventory_2</i>
+            </div>
+            <div class="menu-title">All Bookings</div>
+          </a>
+        </li>
 
-            <!--navigation-->
-            <ul class="metismenu" id="sidenav">
-                <li>
-                    <a href="./index.html">
-                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">home</i>
-                        </div>
-                        <div class="menu-title">Dashboard</div>
-                    </a>
+        <li>
+          <a href="./wallet-all.html" >
+            <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">shopping_bag</i>
+            </div>
+            <div class="menu-title">Wallet</div>
+          </a>
+        </li>
+        <li>
+          <a  href="./refund-request.html">
+            <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">card_giftcard</i>
+            </div>
+            <div class="menu-title">Refund Requests </div>
+          </a>
+        </li>
+        <li>
+          <a  href="./refund-request.html">
+            <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">view_agenda</i>
+            </div>
+            <div class="menu-title">Profile</div>
+          </a>
+        </li>
 
-                </li>
-                <li>
-                    <a href="javascript:;">
-                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">widgets</i>
-                        </div>
-                        <div class="menu-title">Hotel Rooms</div>
-                    </a>
-                </li>
+        <li>
+          <a  href="./setting.html" class="notify-list ">
+            <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">view_agenda</i>
+            </div>
+            <div class="menu-title">Settings</div>
+          </a>
+        </li>
+        <li class="mt-5 ">
+         
+            <div class="  BTNSign">
+              <button type="button"  class="btn w-100 px-5 btn ">Logout</button>
 
-                <li>
-                    <a href="javascript:;">
-                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">inventory_2</i>
-                        </div>
-                        <div class="menu-title">All Bookings</div>
-                    </a>
-                </li>
+            </div>
+     
+        </li>
+   
+      </ul>
+      
+      <!--end navigation-->
+    </div>
 
-                <li>
-                    <a href="javascript:;">
-                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">shopping_bag</i>
-                        </div>
-                        <div class="menu-title">Wallet</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:;">
-                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">card_giftcard</i>
-                        </div>
-                        <div class="menu-title">Refund Requests </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:;">
-                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">view_agenda</i>
-                        </div>
-                        <div class="menu-title">Profile</div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="javascript:;" class="notify-list ">
-                        <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">view_agenda</i>
-                        </div>
-                        <div class="menu-title">Settings</div>
-                    </a>
-                </li>
-                <li class="mt-5 ">
-
-                    <div class="  BTNSign">
-                        <button type="button" class="btn w-100 px-5 btn ">Logout</button>
-
-                    </div>
-
-                </li>
-
-            </ul>
-
-            <!--end navigation-->
-        </div>
-
-    </aside>
+  </aside>
     <!--end sidebar-->
 
     <!--start main wrapper-->
     <main class="main-wrapper">
         <div class="main-content bg-white">
             <!--breadcrumb-->
-          <div class="d-flex justify-content-between align-items-center ">
-            <div class="  py-2 ">
-                <h2 class="REct_text">Wallet</h2>
+            <div class="d-flex justify-content-between align-items-center ">
+                <div class="  py-2 ">
+                    <h2 class="REct_text">Wallet</h2>
+                </div>
+                <div class="">
+                    <a href="./withdrawal-amount.html">
+                        <img class="w-100 " src="./assets/img/withdrawal.svg" alt="">
+                    </a>
+
+                </div>
             </div>
-            <div class="">
-          <a href="#">
-            <img class="w-100 " src="./assets/img/withdrawal.svg" alt="">
-          </a>
-                    
-            </div>
-          </div>
-          <p class="Hotel-text  ">Available Amount,Transactions & withdraws are below</p>
+            <p class="Hotel-text  ">Available Amount,Transactions & withdraws are below</p>
 
 
             <!--end breadcrumb-->
@@ -214,44 +186,47 @@
             <div class="d-flex justify-content-between py-2   align-items-center ">
                 <h2 class="REct_text">Wallet</h2>
                 <button class="btn btn-dark ">
-                   <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.30901 13.1907C2.28634 14.1667 3.85701 14.1667 6.99967 14.1667C10.1423 14.1667 11.7137 14.1667 12.6897 13.19C13.6663 12.2147 13.6663 10.6427 13.6663 7.50004C13.6663 4.35737 13.6663 2.78604 12.6897 1.80937C11.7143 0.833374 10.1423 0.833374 6.99967 0.833374C3.85701 0.833374 2.28567 0.833374 1.30901 1.80937C0.333008 2.78671 0.333008 4.35737 0.333008 7.50004C0.333008 10.6427 0.333008 12.2147 1.30901 13.1907ZM8.83301 10.1667C8.83301 10.2993 8.78033 10.4265 8.68656 10.5203C8.59279 10.614 8.46562 10.6667 8.33301 10.6667H5.66634C5.53373 10.6667 5.40656 10.614 5.31279 10.5203C5.21902 10.4265 5.16634 10.2993 5.16634 10.1667C5.16634 10.0341 5.21902 9.90692 5.31279 9.81315C5.40656 9.71939 5.53373 9.66671 5.66634 9.66671H8.33301C8.46562 9.66671 8.59279 9.71939 8.68656 9.81315C8.78033 9.90692 8.83301 10.0341 8.83301 10.1667ZM9.66634 8.00004C9.79895 8.00004 9.92613 7.94736 10.0199 7.85359C10.1137 7.75983 10.1663 7.63265 10.1663 7.50004C10.1663 7.36743 10.1137 7.24026 10.0199 7.14649C9.92613 7.05272 9.79895 7.00004 9.66634 7.00004H4.33301C4.2004 7.00004 4.07322 7.05272 3.97945 7.14649C3.88569 7.24026 3.83301 7.36743 3.83301 7.50004C3.83301 7.63265 3.88569 7.75983 3.97945 7.85359C4.07322 7.94736 4.2004 8.00004 4.33301 8.00004H9.66634ZM11.4997 4.83337C11.4997 4.96598 11.447 5.09316 11.3532 5.18693C11.2595 5.28069 11.1323 5.33337 10.9997 5.33337H2.99967C2.86707 5.33337 2.73989 5.28069 2.64612 5.18693C2.55235 5.09316 2.49967 4.96598 2.49967 4.83337C2.49967 4.70077 2.55235 4.57359 2.64612 4.47982C2.73989 4.38605 2.86707 4.33337 2.99967 4.33337H10.9997C11.1323 4.33337 11.2595 4.38605 11.3532 4.47982C11.447 4.57359 11.4997 4.70077 11.4997 4.83337Z" fill="white"/>
-                        </svg>  Today
-                        
-                </button>            </div>
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.30901 13.1907C2.28634 14.1667 3.85701 14.1667 6.99967 14.1667C10.1423 14.1667 11.7137 14.1667 12.6897 13.19C13.6663 12.2147 13.6663 10.6427 13.6663 7.50004C13.6663 4.35737 13.6663 2.78604 12.6897 1.80937C11.7143 0.833374 10.1423 0.833374 6.99967 0.833374C3.85701 0.833374 2.28567 0.833374 1.30901 1.80937C0.333008 2.78671 0.333008 4.35737 0.333008 7.50004C0.333008 10.6427 0.333008 12.2147 1.30901 13.1907ZM8.83301 10.1667C8.83301 10.2993 8.78033 10.4265 8.68656 10.5203C8.59279 10.614 8.46562 10.6667 8.33301 10.6667H5.66634C5.53373 10.6667 5.40656 10.614 5.31279 10.5203C5.21902 10.4265 5.16634 10.2993 5.16634 10.1667C5.16634 10.0341 5.21902 9.90692 5.31279 9.81315C5.40656 9.71939 5.53373 9.66671 5.66634 9.66671H8.33301C8.46562 9.66671 8.59279 9.71939 8.68656 9.81315C8.78033 9.90692 8.83301 10.0341 8.83301 10.1667ZM9.66634 8.00004C9.79895 8.00004 9.92613 7.94736 10.0199 7.85359C10.1137 7.75983 10.1663 7.63265 10.1663 7.50004C10.1663 7.36743 10.1137 7.24026 10.0199 7.14649C9.92613 7.05272 9.79895 7.00004 9.66634 7.00004H4.33301C4.2004 7.00004 4.07322 7.05272 3.97945 7.14649C3.88569 7.24026 3.83301 7.36743 3.83301 7.50004C3.83301 7.63265 3.88569 7.75983 3.97945 7.85359C4.07322 7.94736 4.2004 8.00004 4.33301 8.00004H9.66634ZM11.4997 4.83337C11.4997 4.96598 11.447 5.09316 11.3532 5.18693C11.2595 5.28069 11.1323 5.33337 10.9997 5.33337H2.99967C2.86707 5.33337 2.73989 5.28069 2.64612 5.18693C2.55235 5.09316 2.49967 4.96598 2.49967 4.83337C2.49967 4.70077 2.55235 4.57359 2.64612 4.47982C2.73989 4.38605 2.86707 4.33337 2.99967 4.33337H10.9997C11.1323 4.33337 11.2595 4.38605 11.3532 4.47982C11.447 4.57359 11.4997 4.70077 11.4997 4.83337Z"
+                            fill="white" />
+                    </svg> Today
+
+                </button>
+            </div>
             <div class="row">
                 <div class="col-md-3 col-sm-6 py-2 ">
-                  <div class=" bg-Color px-3 py-2  rounded-2">
-                    <h2 class="NUMBER text-white ">€400</h2>
-                    <p class="PARA_text text-white">Available Credits</p>
-                  </div>
+                    <div class=" bg-Color px-3 py-2  rounded-2">
+                        <h2 class="NUMBER text-white ">€400</h2>
+                        <p class="PARA_text text-white">Available Credits</p>
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6 py-2 ">
-                  <div class=" bg-Color2 px-3 py-2  rounded-2">
-                    <h2 class="NUMBER text-white ">€12.5k</h2>
-                    <p class="PARA_text text-white ">WIThdrawn</p>
-                  </div>
+                    <div class=" bg-Color2 px-3 py-2  rounded-2">
+                        <h2 class="NUMBER text-white ">€12.5k</h2>
+                        <p class="PARA_text text-white ">WIThdrawn</p>
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6 py-2 ">
-                  <div class=" bg-Color3 px-3 py-2  rounded-2">
-                    <h2 class="NUMBER text-white ">€20</h2>
-                    <p class="PARA_text text-white ">Refunded</p>
-                  </div>
+                    <div class=" bg-Color3 px-3 py-2  rounded-2">
+                        <h2 class="NUMBER text-white ">€20</h2>
+                        <p class="PARA_text text-white ">Refunded</p>
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6 py-2 ">
-                  <div class=" bg-Color4 px-3 py-2  rounded-2">
-                    <h2 class="NUMBER">€500</h2>
-                    <p class="PARA_text">Pending Payment</p>
-                  </div>
+                    <div class=" bg-Color4 px-3 py-2  rounded-2">
+                        <h2 class="NUMBER">€500</h2>
+                        <p class="PARA_text">Pending Payment</p>
+                    </div>
                 </div>
-              </div>
+            </div>
         </div>
         <div class=" main-content py-0">
             <div class="">
-                <a href="#" class="mx-2 py-2 ">
+                <a href="./wallet-all.html" class="mx-2 py-2 ">
                     <input type="button" class="btn my-2  btn-primary bg-primary" value="Booking Transactions">
                 </a>
-                <a href="#" class="mx-2 ">
+                <a href="./withdrawal.html" class="mx-2 ">
                     <input type="button" class="btn my-2  btn-secondary  bg-secondary " value="Withdrawn">
                 </a>
             </div>
@@ -292,7 +267,8 @@
                                 </td>
                                 <td class="mainbadge">
                                     <a href="#" class="mx-2">
-                                        <input type="button" class="btn btn- border-black text-black  bg-white  " value="View">
+                                        <input type="button" class="btn btn- border-black text-black  bg-white  "
+                                            value="View">
                                     </a>
                                 </td>
                                 <td class="d-flex align-items-center justify-content-end ">
@@ -301,7 +277,7 @@
                                     </a>
                                 </td>
                             </tr>
-                         
+
                             <!-- Add more rows with similar structure for additional data -->
                         </tbody>
                     </table>
@@ -487,7 +463,480 @@
 
 
     <!--start overlay-->
-    <div class="overlay btn-toggle"></div>
+     <!--start overlay-->
+  <div class="overlay btn-toggle"></div>
+  <!--end overlay-->
+ <!-- models start -->
+ <div class="container py-5">
+    <!-- Cancel Booking  -->
+    <div class="row">
+        <!-- Modal -->
+        <div class="modal fade" id="cancelbooking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content w-100">
+                <div class="modal-header border-0">
+                <h1 class="modal-title fs-5 modal-heading" id="exampleModalLabel">Cancel Booking</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                <p class="paragraph-modal">Cancelling will automatically refund the Payment to the customer and the room will be available again for Booking.</p>
+                </div>
+                <div class="modal-footer border-0 d-flex justify-content-between align-item-center">
+                <button type="button" class="btn btn-secondary px-2 px-md-4" data-bs-dismiss="modal">Don’t Cancel</button>
+                <button type="button" class="btn btn-danger px-md-5 px-3">Cancel it</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Nofication  -->
+    <div class="row ">
+        <!-- Modal -->
+        <div class="modal fade" id="notification" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content w-100">
+                <div class="modal-header border-0">
+                <h1 class="modal-title fs-5 modal-heading" id="exampleModalLabel">Send Notification</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                       <h4 class="sub-heading">Notification Title</h4>  
+                       <p class="paragraph-modal">Booking # 2 confirmed </p>
+                   </div>
+                   <div class="">
+                    <h4 class="sub-heading">Notification Body</h4>
+                    <p>Hey your Booking is confirmed with Hotel Ramada,
+                        CheckIn is on 9th September anytime.</p>
+                   </div>
+                </div>
+                <div class="modal-footer border-0">
+                <button type="button" class="btn btn-secondary px-2 px-md-5" data-bs-dismiss="modal"> Cancel</button>
+                <button type="button" class="btn btn-primary px-md-5 px-2">Update</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div> 
+  
+    <!-- Add new Room -->
+    <div class="row ">
+        <!-- Modal -->
+        <div class="modal fade" id="addroom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                <h1 class="modal-title fs-5 modal-heading" id="exampleModalLabel">Add New Room</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="select" class="form-label sub-heading">Room Type</label>
+                            <select class="form-select border-0" aria-label="Default select example">
+                                <option selected>Select Room Type</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="people" class="form-label sub-heading">Suitable for People</label>
+                            <input type="text" class="form-control border-0" id="people" placeholder="2">
+                        </div>
+                        <div class="mb-3">
+                            <label for="price" class="form-label sub-heading">Price Per Room/ Day</label>
+                            <input type="text" class="form-control border-0" id="price" placeholder="€40.00">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="room" class="form-label sub-heading">How many Rooms are in Total?</label>
+                            <input type="text" class="form-control border-0" id="room" placeholder="100">
+                        </div>
+                        <div class="mb-3">
+                            <label for="available" class="form-label sub-heading">Available Rooms</label>
+                            <input type="text" class="form-control border-0" id="available" placeholder="50">
+                        </div>
+                        <div class="mb-3">
+                            <label for="maintain" class="form-label sub-heading">Rooms Under Maintenance</label>
+                            <input type="text" class="form-control border-0" id="maintain" placeholder="3">
+                        </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer border-0">
+                <button type="button" class="btn btn-secondary px-md-5 px-2" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary px-md-5 px-2">Save</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Update units -->
+    <div class="row">
+        <!-- Modal -->
+        <div class="modal fade" id="updateunit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                <h1 class="modal-title fs-5 modal-heading" id="exampleModalLabel">Update Units</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="select" class="form-label sub-heading">Room Type (Cannot be Edited)</label>
+                            <select class="form-select border-0" aria-label="Default select example">
+                                <option selected>Standard</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="people" class="form-label sub-heading">Price Per Room/ Day</label>
+                            <input type="text" class="form-control border-0" id="people" placeholder="€40.00">
+                        </div>
+                        <div class="mb-3">
+                            <label for="price" class="form-label sub-heading">Suitable for People</label>
+                            <input type="text" class="form-control border-0" id="price" placeholder="2">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="rooms" class="form-label sub-heading">How many Rooms are in Total?</label>
+                            <input type="text" class="form-control border-0" id="rooms" placeholder="100">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="roommaintaince" class="form-label sub-heading">Rooms Under Maintenance</label>
+                            <input type="text" class="form-control border-0" id="roommaintaince" placeholder="3">
+                        </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer border-0">
+                <button type="button" class="btn btn-secondary px-md-5 " data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary px-md-5 ">Update</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Set available Units -->
+    <div class="row ">
+        <!-- Modal -->
+        <div class="modal fade" id="availabelunits" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                <h1 class="modal-title fs-5 modal-heading" id="exampleModalLabel">Set Available Units</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 <div class="row">
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="price" class="form-label sub-heading">Available Rooms</label>
+                            <input type="text" class="form-control border-0" id="price" placeholder="50">
+                        </div>
+                    </div>
+                 </div>
+                </div>
+                <div class="modal-footer border-0">
+                <button type="button" class="btn btn-secondary px-md-4 " data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary px-md-4">Update</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Delete unit -->
+    <div class="row ">
+  
+        <!-- Modal -->
+        <div class="modal fade" id="deleteunit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Units</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <p class="paragraph-modal">Would you like to Delete this Room Type with All Units?
+                    <span class="text-warning">Warning </span> (If someone is checked in to this Room Type , You cannot delete it)</p>
+                </div>
+                <div class="modal-footer border-0 d-flex justify-content-between align-item-center">
+                <button type="button" class="btn btn-secondary px-md-5" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger px-md-5">Delete</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Refund amount -->
+    <div class="row">
+  <!-- Modal -->
+        <div class="modal fade" id="refundamount" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Refund Amount</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                   <h4 class="pay">€60.00</h4>
+                   <p class="paragraph-modal">Will be deducted & refunded to Ahmed Khan
+                    in 3 working days</p>
+                </div>
+                <div class="modal-footer border-0 d-flex justify-content-between align-item-center">
+                <button type="button" class="btn btn-secondary px-md-5" data-bs-dismiss="modal">No, don’t </button>
+                <button type="button" class="btn btn-primary">Proceed for Refund</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Delet mathod -->
+    <div class="row ">  
+        <!-- Modal -->
+        <div class="modal fade" id="deletmethod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Confirm Payout</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                   <p class="paragraph-modal">Are you sure you want to payout your credits</p>
+                </div>
+                <div class="modal-footer border-0 d-flex justify-content-between align-item-center">
+                <button type="button" class="btn btn-secondary px-md-5" data-bs-dismiss="modal">No, don’t </button>
+                <button type="button" class="btn btn-primary px-md-5">yes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Select Method -->
+    <div class="row">
+        <!-- Modal -->
+        <div class="modal fade" id="selectmethod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">New Payment Method</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                   <div class="d-flex justify-content-between align-item-center">
+                    <img src="./assets/img/Processor-1.png" class="img-fluid" width="100" alt="">
+                    <img src="./assets/img/Processor-2.png" class="img-fluid" width="100" alt="">
+                    <img src="./assets/img/Processor-3.png" class="img-fluid" width="100" alt="">
+                    <img src="./assets/img/Processor-4.png" class="img-fluid" width="100" alt="">
+                   </div>
+                </div>
+                <div class="modal-footer border-0 d-flex justify-content-between align-item-center">
+                <button type="button" class="btn btn-secondary px-md-5" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary px-md-5" data-bs-toggle="modal" data-bs-target="#paymentdetails">Continue</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>   
+  
+    <!--Add payment details  -->
+    <div class="row "> 
+        <!-- Modal -->
+        <div class="modal fade" id="paymentdetails" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Add Payment Details</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 <form class="row">
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="account" class="form-label sub-heading">Account Name</label>
+                            <input type="text" class="form-control border-0" id="account" placeholder="Account Holder Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cardnumber" class="form-label sub-heading">Card Number</label>
+                            <input type="text" class="form-control border-0" id="cardnumber" placeholder="7678 9822 1234 1050">
+                        </div>
+                    </div>
+  
+                 </form>
+                </div>
+                <div class="modal-footer border-0 d-flex justify-content-between align-item-center">
+                <button type="button" class="btn btn-secondary px-md-2" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#delet-method">Change Method</button>
+                <button type="button" class="btn btn-primary px-md-5" data-bs-toggle="modal" data-bs-target="#savedetails">Save</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Save details -->
+    <div class="row">
+        <!-- Modal -->
+        <div class="modal fade" id="savedetails" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Saving Details</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                   <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                   <p class="paragraph-modal pt-lg-4">Please wait while we save your payment details...</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- delete Method -->
+    <div class="row ">
+        <!-- Modal -->
+        <div class="modal fade" id="delete-method" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                <h1 class="modal-title fs-5 modal-heading" id="exampleModalLabel">Delete Method</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <p class="paragraph-modal">
+                    Are you sure you want to delete the payment 
+                    Method?
+                  </p>
+                </div>
+                <div class="modal-footer border-0 d-flex justify-content-between align-item-center">
+                <button type="button" class="btn btn-secondary px-md-5" data-bs-dismiss="modal">No, don’t </button>
+                <button type="button" class="btn btn-danger px-md-5">Delete it</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Add New service -->
+    <div class="row">
+        <!-- Modal -->
+        <div class="modal fade" id="addservice" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Service</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row">
+                        <div class="mb-3">
+                            <input class="form-control border-0" type="text" placeholder="Service Name" aria-label="default input example">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0 d-flex justify-content-between align-item-center">
+                <button type="button" class="btn btn-secondary px-md-5" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary px-md-5">Save</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+     
+    <!-- Notify Customer -->
+    <div class="row ">
+  <!-- Modal -->
+        <div class="modal fade" id="notify-customer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content w-100">
+                <div class="modal-header border-0">
+                <h1 class="modal-title fs-5 modal-heading" id="exampleModalLabel">Send Notification</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                       <h4 class="sub-heading">Notification Title</h4>  
+                       <p class="paragraph-modal">Guide Booking is Cancelled </p>
+                   </div>
+                   <div class="">
+                    <h4 class="sub-heading">Notification Body</h4>
+                    <p>Hey, your Booking is cancelled due to security reasons, book someone else.</p>
+                   </div>
+                </div>
+                <div class="modal-footer border-0">
+                <button type="button" class="btn btn-secondary px-2 px-md-5" data-bs-dismiss="modal"> Cancel</button>
+                <button type="button" class="btn btn-primary px-md-4 px-2">Send Update</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>   
+  
+    <!--update Service  -->
+    <div class="row py-4">
+        <!-- Modal -->
+        <div class="modal fade" id="updateservice" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Update Services</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="paragraph-modal">
+                        Free WiFi
+                    </p>
+                     
+                </div>
+                <div class="modal-footer border-0 d-flex justify-content-between align-item-center">
+                <button type="button" class="btn btn-secondary px-md-5" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary px-md-5">Update</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Booking today -->
+    <div class="row">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content ">
+                <div class="modal-header border-0">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Bookings Today</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="d-flex justify-content-center align-item-center gap-2">
+                    <img src="./assets/img/no-booking.jpg" class="img-fluid" width="60" alt="">
+                    <p class="paragraph-modal pt-3 ">No Bookings Today</p>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+  </div>
+   <!-- models end -->
     <!--end overlay-->
 
 
