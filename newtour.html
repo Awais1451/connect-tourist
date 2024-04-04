@@ -9,24 +9,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> | Bootstrap 5 Admin Dashboard Template</title>
   <!--favicon-->
-
+  
   <!--plugins-->
   <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/metisMenu.min.css">
   <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/mm-vertical.css">
-  <!--bootstrap css-->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&amp;display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="assets/plugins/simplebar/css/simplebar.css">
   <!--main css-->
   <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
   <link href="sass/main.css" rel="stylesheet">
-  <link href="sass/dark-theme.css" rel="stylesheet">
-  <link href="sass/semi-dark.css" rel="stylesheet">
-  <link href="sass/bordered-theme.css" rel="stylesheet">
   <link href="sass/responsive.css" rel="stylesheet">
+  
+  <!--  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FullCalendar CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.css" rel="stylesheet">
+
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!------ Include the above in your HEAD tag ---------->
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  
 
 </head>
 
@@ -83,7 +96,7 @@
 
         </li>
         <li>
-          <a href="javascript:;" >
+          <a href="./hotelroom.html" >
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">widgets</i>
             </div>
             <div class="menu-title">Hotel Rooms</div>
@@ -91,7 +104,7 @@
         </li>
 
         <li>
-          <a href="javascript:;" >
+          <a href="./All-booking.html" >
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">inventory_2</i>
             </div>
             <div class="menu-title">All Bookings</div>
@@ -99,21 +112,21 @@
         </li>
 
         <li>
-          <a href="javascript:;" >
+          <a href="./wallet-all.html" >
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">shopping_bag</i>
             </div>
             <div class="menu-title">Wallet</div>
           </a>
         </li>
         <li>
-          <a  href="javascript:;">
+          <a  href="./refund-request.html">
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">card_giftcard</i>
             </div>
             <div class="menu-title">Refund Requests </div>
           </a>
         </li>
         <li>
-          <a  href="javascript:;">
+          <a  href="./refund-request.html">
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">view_agenda</i>
             </div>
             <div class="menu-title">Profile</div>
@@ -121,20 +134,14 @@
         </li>
 
         <li>
-          <a  href="javascript:;" class="notify-list ">
+          <a  href="./setting.html" class="notify-list ">
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">view_agenda</i>
             </div>
             <div class="menu-title">Settings</div>
           </a>
         </li>
         <li class="mt-5 ">
-         <div class=" py-4">
-          <div class="d-flex justify-content-center toggle-switch align-items-center gap-2  rounded ">
-            <p class=" text-nowrap text-white  mt-2">Available for Bookings</p>
-            <input type="checkbox" class="Input-check" id="switch" /><label class="LAbel-check" for="switch">Toggle</label>
-          </div>
-         </div>
-          
+         
             <div class="  BTNSign">
               <button type="button"  class="btn w-100 px-5 btn ">Logout</button>
 
@@ -143,56 +150,6 @@
         </li>
    
       </ul>
-      <style>
-        .toggle-switch{
-          background-color: rgba(255, 255, 255, 0.2);
-          border:1px solid rgba(255, 255, 255, 0.2);
-        }
-        .Input-check[type=checkbox]{
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
-
-.LAbel-check {
-  cursor: pointer;
-  text-indent: -9999px;
-  width: 50px;
-  height: 30px;
-  background: grey;
-  display: block;
-  border-radius: 100px;
-  position: relative;
-}
-
-.LAbel-check:after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  border-radius: 15px;
-  transition: 0.3s;
-}
-
-.Input-check:checked + .LAbel-check {
-  background: green;
-}
-
-.Input-check:checked + .LAbel-check:after {
-  left: calc(100% - 5px);
-  transform: translateX(-100%);
-}
-
-.LAbel-check:active:after {
-  width: 30px;
-}
-
-
-
-</style>
       
       <!--end navigation-->
     </div>
@@ -204,208 +161,134 @@
   <!--start main wrapper-->
   <main class="main-wrapper">
     <div class="main-content bg-white pb-0  ">
-      <!--breadcrumb-->
-      <div class="page-breadcrumb     d-flex align-items-center mb-3">
-        <div class="breadcrumb-title pe-3">
-          <h3>Dashboard</h3>
-          <p>Hello, Manager. Welcome back to your Buissness Portal!</p>
-        </div>
-      </div>
-      <!--end breadcrumb-->
-    </div>
-   <div class="main-content">
-    <div class="row">
-      <div class="col-md-3 col-sm-6 py-2 ">
-        <div class=" bg-white px-3 py-2  rounded-2">
-          <h2 class="NUMBER">4</h2>
-          <p class="PARA_text">Upcoming Bookings</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 py-2 ">
-        <div class=" bg-white px-3 py-2  rounded-2">
-          <h2 class="NUMBER">30</h2>
-          <p class="PARA_text">ALl Bookings</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 py-2 ">
-        <div class=" bg-white px-3 py-2  rounded-2">
-          <h2 class="NUMBER">€200.40</h2>
-          <p class="PARA_text">ALl Time Earnings</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 py-2 ">
-        <div class=" bg-white px-3 py-2  rounded-2">
-          <h2 class="NUMBER">130</h2>
-          <p class="PARA_text">Days of GUIDe Given</p>
-        </div>
+      <div class="container">
+           <div class="row">
+              <div class="d-flex flex-sm-row flex-column justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-4"> 
+                <img src="./assets/img/arrow.svg" class=""  alt="">
+                <div class="">
+                <h2 class="REct_text">Add New Tour</h2>
+                <p class="Hotel-text ">Hello, Manager. Welcome back to your Buissness Portal!</p>
+                </div>
+               </div> 
+                <div class="d-flex gap-4">
+                <button type="button" class="btn fs-4 p-3 btn-secondary">Cancel</button>
+                <button type="button" class="btn fs-4 p-3 btn-primary">Upload Tour</button>
+                </div>
+              </div>
+         </div>
       </div>
     </div>
-    <div class="bg-white p-3   px-3  my-3">
-        <h2 class="REct_text">Recent Bookings</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="d-flex flex-column flex-sm-row  align-items-center gap-3">
-                    <img class="iMG-width w-50 py-2 " src="./assets/images/Ellipse 177.png" alt="">
-                    <div class="">
-                        <table class="">
+    <section class="main-content">
+        <div class="container">
+            <form class="row">
+               <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea2" class="form-label label-heading">Tour Title*</label>
+                        <textarea class="form-control inp-text" id="exampleFormControlTextarea2" rows="4" placeholder="1 Day Bus Tour"></textarea>
+                   </div>
+               </div>
+               <div class="col-md-6">
+                   <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label label-heading">Tour Description*</label>
+                    <textarea class="form-control event-desc" id="exampleFormControlTextarea1" rows="4"
+                    placeholder=" "></textarea>
+                   </div>
+               </div>
+            </form>
+
+            <div class="row  mt-5 shadow">
+                <div class="col-md-6">
+                  
+                    <div class="row justify-content-center">
+                        <div class="page mt-2">
+                            <!-- Responsive calendar - START -->
+                            <h4 class="label-heading">Select Tour Date?*</h4>
+                            <div class="responsive-calendar">
+                               
+                                <div class="controls d-flex justify-content-between align-items-center">
+                                    <a class="pull-left" data-go="prev">
+                                        <div class="btn"><i class="icon-chevron icon-chevron-rotate"></i></div>
+                                    </a>
+                                    <h4><span data-head-year></span> <span data-head-month></span></h4>
+                                    <a class="pull-right" data-go="next">
+                                        <div class="btn"><i class="icon-chevron"></i></div>
+                                    </a>
+                                </div>
+                                <hr />
+                                <div class="day-headers">
+                                    <div class="day header">Mon</div>
+                                    <div class="day header">Tue</div>
+                                    <div class="day header">Wed</div>
+                                    <div class="day header">Thu</div>
+                                    <div class="day header">Fri</div>
+                                    <div class="day header">Sat</div>
+                                    <div class="day header">Sun</div>
+                                </div>
+                                <div class="days" data-group="days">
+                                    <!-- the place where days will be generated -->
+                                </div>
+                            </div>
+                            <!-- Responsive calendar - END -->
+                            <!-- Placeholder -->
+                            <div class="responsive-calendar-placeholder">
     
-                            <tr class="">
-                                <td class="py-2 this-text-grey pe-5 ">Contact No</td>
-                                <td class="ps-5">914-774-3551</td>
-                            </tr>
-                            <tr>
-                                <td class="py-2 this-text-grey ">Full Name</td>
-                                <td class="ps-5">
-                                    AhmedKhan12
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="py-2 this-text-grey ">Email</td>
-                                <td class="ps-sm-5 ps-0  TEXT_MED">AhmedKhan12@gmail.com</td>
-                            </tr>
-                      
-                        </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 pt-lg-4">
+                    <div class="mb-3">
+                        <label for="time" class="form-label label-heading">Tour Starting Time*</label>
+                        <input type="text" class="form-control inp-text py-5" id="time" placeholder="5:30">
+                    </div>
+                    <div class="mb-3">
+                        <label for="hour" class="form-label label-heading">Duration of Tour*</label>
+                        <input type="text" class="form-control inp-text py-5" id="hour" placeholder="3 hours">
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 justify-content-end d-flex align-items-center ">
-              <button class="bg-secondary btn border-0   btn-secondary   mx-2 py-2 my-2  rounded ">
-                <a href="#">
-                  <span class=" px-2  text-white fs-6 "><i class="fa-solid fa-phone"></i></span>
-              </a>
-              Call Now
-                
-            </button>
-            <button class="btn btn-primary bg-primary  mx-2 py-2 my-2  rounded ">
-              <a href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <span class=" px-2  text-white fs-6  "><i class="fa-regular fa-envelope"></i></span>
-            </a>
-            Notify User
-            </button>
+            <!-- Select map -->
+            <div class="row mt-5">
+                <h4 class="label-heading">Tour Pickup Location*</h4> 
+                <div class="col-md-12 text-center py-5 rounded bg-location">
+                    <!-- Button to link to the map -->
+                    <div class="my-5"> 
+                        <button id="mapBtn" class="btn p-3 fs-4 btn-primary">Select Location</button>
+                    </div>    
+                </div>
+            </div>
 
+            <div class="row my-5 py-4 shadow">
+                <div class="col-md-6 mt-lg-4">
+                    <h4 class="event-heading">Upload Promotional Images*</h4>
+                    <div class="drop-zone my-4">
+                        <span class="drop-zone__prompt"><i class="fa-solid fa-image fs-1 "></i>
+                            <p class="footer-para"> 
+                                <a href="" class="text-decoration-none">Upload a file</a>
+                                or drag and drop or 
+                                <a href="" class="text-decoration-none">Paste Url</a>
+                            </p>
+                        </span>
+                        <input type="file" name="myFile" class="drop-zone__input">
+                    </div> 
+                </div>
+                <div class="col-md-6 mt-lg-4">
+                    <h4 class="event-heading">Tour Cost</h4> 
+                    <div class="mb-3">
+                       <label for="exampleFormControlInput5" class="form-label label-heading">Available Space</label>
+                       <input type="text" class="form-control inp-text py-5" id="exampleFormControlInput5" placeholder="32 people">
+                   </div> 
+                   <div class="mb-3">
+                       <label for="exampleFormControlInput5" class="form-label label-heading">Tour Cost Per Person*</label>
+                       <input type="text" class="form-control inp-text py-5" id="exampleFormControlInput5" placeholder="€ 24">
+                   </div> 
+                </div>
             </div>
         </div>
-    </div>
-    <div class="bg-white  px-2 my-3">
-      <div class="d-flex justify-content-between px-3  align-items-center py-2   align-self-center ">
-        <h2 class="REct_text">Recent Bookings</h2>
-        <a href="#">
-          <input type="button" class="btn btn-dark  bg-dark  " value="View All">
+    </section>
 
-        </a>
-      </div>
-      <div class="table-responsive">
-        <table class="table table-striped bg-white exampleT w-100" id="all_clients_list">
-          <thead>
-            <tr>
-              <th scope="col">Booking By</th>
-              <th scope="col">Booking at</th>
-              <th scope="col">Checkin date</th>
-              <th scope="col">Checkout date</th>
-              <th scope="col">Amount Paid</th>
-              <th scope="col">Status</th>
-              <th scope="col">Action</th>
-            </tr>
-          </thead>
-          <tbody class="bg-whes">
-            <tr class="">
-              <td>AhmedKhan12</td>
-              <td>20 mins ago</td>
-              <td>9th Sep 23</td>
-              <td>10th September 23</td>
-              <td class="NMBR text-black fw-bolder ">€60.00</td>
-              <td class="mainbadge">
-                <div class="bootbadgesuccess">
-                  <div class="d-flex">
-                    <div class="">
-                      <button type="button" class="bg-transparent border-0 text-white pe-1" 
-                     >
-                        Confirmed
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td class="d-flex align-items-center justify-content-end ">
-                <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#cancelbooking"><img
-                    src="./assets/img/x.svg" alt=""></a>
-                    <a href="#" class=" mx-2 " data-bs-toggle="modal" data-bs-target="#notify-customer">
-                      <img src="./assets/images/email.svg" alt="">
-    
-                    </a>
-                <a href="#" class="mx-2" >
-                  <input type="button" class="btn btn-primary bg-primary" value="Details">
-                </a>
-              </td>
-            </tr>
-            <tr class="">
-              <td>AhmedKhan12</td>
-              <td>20 mins ago</td>
-              <td>9th Sep 23</td>
-              <td>10th September 23</td>
-              <td class="NMBR text-black fw-bolder ">€60.00</td>
-              <td class="mainbadge">
-                <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#modelusernotify">
-                  <input type="button" class="btn btn-warning  rounded-5  bg-warning " value="Checked Out">
-                </a>
-              </td>
-              <td class="d-flex align-items-center justify-content-end ">
-                
-                <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#modeldelete">
-                  <img src="./assets/images/delete.svg" alt="">
-                </a>
-                <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#modelusernotify">
-                  <input type="button" class="btn btn-primary bg-primary" value="Details">
-                </a>
-              </td>
-            </tr>
-            <!-- Add more rows with similar structure for additional data -->
-          </tbody>
-        </table>
-      </div>
-      
-      
-    </div>
-    <div class="bg-white  px-2 my-4">
-      <div class=" py-2   px-3  ">
-        <h2 class="REct_text">Upcoming Checkouts</h2>
-      </div>
-      <div class="table-responsive">
-        <table class="table table-striped bg-white exampleT w-100" id="all_clients_list">
-          <thead>
-            <tr>
-              <th scope="col">Booking By</th>
-              <th scope="col">Free Units to be</th>
-              <th scope="col">Checked In</th>
-              <th scope="col">Checkout to be In</th>
-              <th scope="col" class="text-center ">Action</th>
-            </tr>
-          </thead>
-          <tbody class="bg-whes">
-            <tr class="">
-              <td>Leigh Ankunding</td>
-              <td>2</td>
-              <td>4 days ago</td>
-              <td>30 mins</td>
-             
-              <td class="d-flex align-items-center justify-content-end ">
-                <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#modelusernotify">
-                  <input type="button" class="btn btn-success  bg-success " value="Notify Customer">
-                </a>
-                <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#modelusernotify">
-                  <input type="button" class="btn btn-primary bg-primary" value="Details">
-                </a>
-              </td>
-            </tr>
-           
-            <!-- Add more rows with similar structure for additional data -->
-          </tbody>
-        </table>
-      </div>
-      
-      
-    </div>
-   </div>
+
 
 
   </main>
@@ -416,8 +299,8 @@
    <!--start overlay-->
   <div class="overlay btn-toggle"></div>
   <!--end overlay-->
-<!-- models start -->
-<div class="container py-5">
+ <!-- models start -->
+ <div class="container py-5">
   <!-- Cancel Booking  -->
   <div class="row">
       <!-- Modal -->
@@ -891,7 +774,6 @@
   <!--end overlay-->
 
 
-
   <!--start footer-->
  
   <!--top footer-->
@@ -918,8 +800,27 @@
   <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
   <script src="assets/js/index2.js"></script>
   <script src="assets/js/main.js"></script>
+  <!--  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Moment.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <!-- FullCalendar JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.js"></script>
+  <!-- FullCalendar Bootstrap Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/bootstrap/main.min.js"></script>
+  <script src="./assets/js/app.js" defer></script>
 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
+  
 
   <script src="assets/plugins/chartjs/js/chart.js"></script>
   <script src="assets/plugins/chartjs/js/chartjs-custom.js"></script>
