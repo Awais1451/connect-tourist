@@ -23,9 +23,6 @@
   <!--main css-->
   <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
   <link href="sass/main.css" rel="stylesheet">
-  <link href="sass/dark-theme.css" rel="stylesheet">
-  <link href="sass/semi-dark.css" rel="stylesheet">
-  <link href="sass/bordered-theme.css" rel="stylesheet">
   <link href="sass/responsive.css" rel="stylesheet">
 
 </head>
@@ -66,14 +63,16 @@
         <img src="assets/img/Random-Symboles.png" class="logo-img" alt="">
       </div>
       <div class="logo-namesecond  mt-4 ">
-        <img src="assets/img/Random-Symboles.png" class="logo-img" alt="" style="width: 130px;">
+        <img src="assets/img/Random-Symboles.png" class="logo-img" alt="" style="width: 100px;">
       </div>
 
     </div>
     <div class="sidebar-nav" data-simplebar="true">
 
       <!--navigation-->
-      <ul class="metismenu" id="sidenav">
+    
+ 
+      <ul class="metismenu mb-5 " id="sidenav">
         <li>
           <a href="./index.html">
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">home</i>
@@ -83,10 +82,10 @@
 
         </li>
         <li>
-          <a href="javascript:;" >
+          <a href="./my-schdule.html" >
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">widgets</i>
             </div>
-            <div class="menu-title">Hotel Rooms</div>
+            <div class="menu-title">My Schedule</div>
           </a>
         </li>
 
@@ -94,26 +93,33 @@
           <a href="javascript:;" >
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">inventory_2</i>
             </div>
-            <div class="menu-title">All Bookings</div>
+            <div class="menu-title">Places</div>
           </a>
         </li>
 
         <li>
-          <a href="javascript:;" >
+          <a href="./All-booking.html" >
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">shopping_bag</i>
             </div>
-            <div class="menu-title">Wallet</div>
+            <div class="menu-title">All Guide Bookings</div>
           </a>
         </li>
         <li>
-          <a  href="javascript:;">
+          <a  href="./wallet-all.html">
+            <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">card_giftcard</i>
+            </div>
+            <div class="menu-title">Wallet </div>
+          </a>
+        </li>
+        <li>
+          <a  href="./refund-request.html">
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">card_giftcard</i>
             </div>
             <div class="menu-title">Refund Requests </div>
           </a>
         </li>
         <li>
-          <a  href="javascript:;">
+          <a  href="./profile2.html">
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">view_agenda</i>
             </div>
             <div class="menu-title">Profile</div>
@@ -121,13 +127,13 @@
         </li>
 
         <li>
-          <a  href="javascript:;" class="notify-list ">
+          <a  href="./setting.html" class="notify-list ">
             <div class="parent-icon"><i class="material-icons-outlined menu-titlemain">view_agenda</i>
             </div>
             <div class="menu-title">Settings</div>
           </a>
         </li>
-        <li class="mt-5 ">
+        <li class="mt-4 ">
          <div class=" py-4">
           <div class="d-flex justify-content-center toggle-switch align-items-center gap-2  rounded ">
             <p class=" text-nowrap text-white  mt-2">Available for Bookings</p>
@@ -143,56 +149,6 @@
         </li>
    
       </ul>
-      <style>
-        .toggle-switch{
-          background-color: rgba(255, 255, 255, 0.2);
-          border:1px solid rgba(255, 255, 255, 0.2);
-        }
-        .Input-check[type=checkbox]{
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
-
-.LAbel-check {
-  cursor: pointer;
-  text-indent: -9999px;
-  width: 50px;
-  height: 30px;
-  background: grey;
-  display: block;
-  border-radius: 100px;
-  position: relative;
-}
-
-.LAbel-check:after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  border-radius: 15px;
-  transition: 0.3s;
-}
-
-.Input-check:checked + .LAbel-check {
-  background: green;
-}
-
-.Input-check:checked + .LAbel-check:after {
-  left: calc(100% - 5px);
-  transform: translateX(-100%);
-}
-
-.LAbel-check:active:after {
-  width: 30px;
-}
-
-
-
-</style>
       
       <!--end navigation-->
     </div>
